@@ -13,6 +13,7 @@ while not game_over:
         if event.type==pygame.QUIT:
             game_over=True
     pygame.draw.rect(dis, blue, [200, 150, 10, 10])
- 
+    pygame.display.update()
+    
 pygame.quit()
 quit()
