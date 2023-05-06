@@ -9,6 +9,10 @@ black = (0, 0, 0)
 red=(255,0,0)
 
 game_over=False
+
+x1 = 300
+y1 = 300
+
 while not game_over:
     for event in pygame.event.get():
         if event.type==pygame.QUIT:
