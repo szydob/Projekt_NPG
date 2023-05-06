@@ -1,6 +1,6 @@
 import pygame
 pygame.init()
-dis=pygame.display.set_mode((400,300))
+dis=pygame.display.set_mode((800,600))
 
 pygame.display.set_caption('Snake game')
 
@@ -16,11 +16,15 @@ y1 = 300
 x1_change = 0       
 y1_change = 0
 
+clock = pygame.time.Clock()
+
 while not game_over:
     for event in pygame.event.get():
         if event.type==pygame.QUIT:
             game_over=True
-    pygame.draw.rect(dis, black, [200, 150, 10, 10])
- 
+    pygame.draw.rect(dis, black, [x1, y1, 10, 10])
+
+    clock.tick(30)
+
 pygame.quit()
 quit()
