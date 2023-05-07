@@ -20,8 +20,11 @@ clock = pygame.time.Clock()
 
 while not game_over:
     for event in pygame.event.get():
-        if event.type==pygame.QUIT:
+        if event.type == pygame.QUIT:
             game_over=True
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT:
+                
     pygame.draw.rect(dis, black, [x1, y1, 10, 10])
 
     clock.tick(30)
