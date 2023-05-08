@@ -1,4 +1,5 @@
 import pygame
+
 pygame.init()
 dis = pygame.display.set_mode((800, 600))
 
@@ -30,6 +31,8 @@ while not game_over:
                 x1_change = 10
                 y1_change = 0
             elif event.key == pygame.K_UP:
+                x1_change = 0
+                y1_change = -10
                 
 
     pygame.draw.rect(dis, black, [x1, y1, 10, 10])
