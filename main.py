@@ -38,6 +38,8 @@ while not game_over:
                 x1_change = 0
                 
     x1 += x1_change
+    y1 += y1_change
+    dis.fill(white)
 
     pygame.draw.rect(dis, black, [x1, y1, 10, 10])
 
