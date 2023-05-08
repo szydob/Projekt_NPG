@@ -35,6 +35,9 @@ while not game_over:
                 y1_change = -10
             elif event.key == pygame.K_DOWN:
                 y1_change = 10
+                x1_change = 0
+                
+    x1 += x1_change
 
     pygame.draw.rect(dis, black, [x1, y1, 10, 10])
 
