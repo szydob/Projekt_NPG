@@ -43,6 +43,7 @@ while not game_over:
 
     pygame.draw.rect(dis, black, [x1, y1, 10, 10])
 
+    pygame.display.update()
     clock.tick(30)
 
 pygame.quit()
