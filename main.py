@@ -21,6 +21,10 @@ y1_change = 0
 
 clock = pygame.time.Clock()
 
+font_style = pygame.font.SysFont(None, 50)
+
+def message(msg, color):
+
 while not game_over:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
