@@ -13,8 +13,8 @@ red = (255, 0, 0)
 
 game_over = False
 
-x1 = 300
-y1 = 300
+x1 = dis_width/2
+y1 = dis_height/2
 
 x1_change = 0       
 y1_change = 0
