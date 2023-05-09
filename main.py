@@ -1,8 +1,10 @@
 import pygame
 
 pygame.init()
-dis = pygame.display.set_mode((800, 600))
 
+dis_width = 800
+dis_height = 600
+dis = pygame.display.set_mode((dis_width, dis_height))
 pygame.display.set_caption('Snake game')
 
 white = (255, 255, 255)
