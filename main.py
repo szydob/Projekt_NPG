@@ -16,10 +16,13 @@ game_over = False
 x1 = dis_width/2
 y1 = dis_height/2
 
+snake_block = 10
+
 x1_change = 0       
 y1_change = 0
 
 clock = pygame.time.Clock()
+snake_speed = 30
 
 font_style = pygame.font.SysFont(None, 50)
 
