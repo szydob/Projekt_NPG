@@ -59,7 +59,12 @@ while not game_over:
     pygame.draw.rect(dis, black, [x1, y1, 10, 10])
 
     pygame.display.update()
-    clock.tick(30)
+    
+    clock.tick(snake_speed)
+    
+message("You lost", red)
+pygame.display.update()
+time.sleep(2)
 
 pygame.quit()
 quit()
