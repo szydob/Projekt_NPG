@@ -28,7 +28,8 @@ font_style = pygame.font.SysFont(None, 50)
 
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
-    dis.blit(mesg, [dis_width / 2, dis_height / 2])
+    mesg_rect = mesg.get_rect(center=(dis_width/2, dis_height/2))
+    dis.blit(mesg, mesg_rect)
 
 while not game_over:
     for event in pygame.event.get():
