@@ -27,6 +27,8 @@ snake_speed = 30
 font_style = pygame.font.SysFont(None, 50)
 
 def message(msg, color):
+    mesg = font_style.render(msg, True, color)
+    dis.blit(mesg, [dis_width / 2, dis_height / 2])
 
 while not game_over:
     for event in pygame.event.get():
@@ -34,7 +36,7 @@ while not game_over:
             game_over = True
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
-                x1_change = -10
+                x1_change = -snake_block
                 y1_change = 0
             elif event.key == pygame.K_RIGHT:
                 x1_change = 10
