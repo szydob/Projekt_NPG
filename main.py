@@ -1,5 +1,5 @@
 import pygame
-
+import time
 pygame.init()
 
 dis_width = 800
