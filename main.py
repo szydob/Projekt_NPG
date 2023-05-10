@@ -39,13 +39,13 @@ while not game_over:
                 x1_change = -snake_block
                 y1_change = 0
             elif event.key == pygame.K_RIGHT:
-                x1_change = 10
+                x1_change = snake_block
                 y1_change = 0
             elif event.key == pygame.K_UP:
                 x1_change = 0
-                y1_change = -10
+                y1_change = -snake_block
             elif event.key == pygame.K_DOWN:
-                y1_change = 10
+                y1_change = snake_block
                 x1_change = 0
                 
     x1 += x1_change
