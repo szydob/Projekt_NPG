@@ -2,6 +2,10 @@ import pygame
 import time
 pygame.init()
 
+
+icon = pygame.image.load("C:/Users/szydo/Desktop/icon.png")  # Podaj ścieżkę do pliku ikony
+pygame.display.set_icon(icon)  # Ustaw ikonę dla okna gry
+
 dis_width = 800
 dis_height = 600
 dis = pygame.display.set_mode((dis_width, dis_height))
