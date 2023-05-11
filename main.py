@@ -1,4 +1,6 @@
 import pygame
+import pygame_menu
+from pygame_menu import themes
 import time
 import random
 
@@ -29,6 +31,13 @@ clock = pygame.time.Clock()
 snake_speed = 30
 
 font_style = pygame.font.SysFont(None, 50)
+
+#menu section
+mainmenu = pygame_menu.Menu('Wonsz z Duszą', dis_width, dis_height, theme=themes.THEME_SOLARIZED)
+mainmenu.add.button('Single player')
+mainmenu.add.button('Survival')
+mainmenu.add.button('Levels')
+mainmenu.add.button('Quit', pygame_menu.events.EXIT)
 
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
