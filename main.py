@@ -23,6 +23,7 @@ x1 = dis_width/2
 y1 = dis_height/2
 
 snake_block = 10
+snake_speed = 30
 
 x1_change = 0       
 y1_change = 0
@@ -42,8 +43,12 @@ mainmenu.add.button('Quit', pygame_menu.events.EXIT)
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
     mesg_rect = mesg.get_rect(center=(dis_width/2, dis_height/2))
-    dis.blit(mesg, mesg_rect)
+    dis.blit(mesg, mesg_rect)   
+   
+def game_loop():
+    
 
+    
 while not game_over:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
