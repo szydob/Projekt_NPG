@@ -1,0 +1,32 @@
+Backlog
+
+1.	Inicjalizacja planszy: 
+• Utworzenie planszę o określonym rozmiarze. 
+• Dodanie tło lub wzór na planszy.
+ • Dodanie elementy graficzne, takie jak logo gry. 
+
+
+2. Implementacja węża: 
+• Utwórz strukturę danych do przechowywania ciała węża. 
+• Dodać logikę poruszania wężem na podstawie naciśniętych klawiszy. 
+• Zapewnić ograniczenia poruszania wężem w obrębie planszy. 
+• Dodać logikę zderzeń 
+
+
+3. Wyświetlanie i aktualizacja: 
+• Wyświetlanie węża na planszy
+ • Aktualizacja pozycji węża po każdym ruchu. 
+
+4. Zdarzenia i interakcje: 
+• Obsługa zdarzenń takich jak zakończenie gry po naciśnięciu przycisku "Quit". 
+• Umożliwienie poruszania wężem za pomocą klawiszy strzałek. 
+
+5. Warunki zakończenia gry: 
+• Sprawdzanie warunków zakończenia gry, takie jak zderzenie węża z granicami planszy. 
+• Wyświetlanie na ekran końcowy po zakończeniu gry. 
+
+
+
+
+
+
