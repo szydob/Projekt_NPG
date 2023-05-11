@@ -1,17 +1,19 @@
 import pygame
 import time
+import random
+
 pygame.init()
-
-
-
-dis_width = 800
-dis_height = 600
-dis = pygame.display.set_mode((dis_width, dis_height))
-pygame.display.set_caption('Wonsz z Dusza')
 
 white = (255, 255, 255)
 black = (0, 0, 0)
 red = (255, 0, 0)
+blue = (0, 0, 255)
+
+dis_width = 800
+dis_height = 600
+
+dis = pygame.display.set_mode((dis_width, dis_height))
+pygame.display.set_caption('Wonsz z Dusza')
 
 game_over = False
 
