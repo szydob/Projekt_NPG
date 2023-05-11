@@ -46,6 +46,10 @@ def message(msg, color):
     dis.blit(mesg, mesg_rect)   
    
 def game_loop():
+    game_over = False
+    game_close = False
+
+    foodx = round(random.randomrange(0, dis_width - s))
     
 
     
