@@ -59,6 +59,10 @@ while not game_over:
     while game_close == True:
         dis.fill(white)
         message("You Lost! Press Q-Quit or C-Play Again", red)
+        pygame.display.update()
+        
+        for event in pygame.event.get():
+
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
