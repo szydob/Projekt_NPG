@@ -49,8 +49,8 @@ def game_loop():
     game_over = False
     game_close = False
 
-    foodx = round(random.randrange(0, dis_width - s))
-    foody = round(random.randrange(0, dis_width - s))
+    foodx = round(random.randrange(0, - snake_block) / 10.0) * 10.0
+    foody = round(random.randrange(0, - snake_block) / 10.0) * 10.0
     
 
     
