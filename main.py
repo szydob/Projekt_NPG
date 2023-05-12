@@ -49,11 +49,15 @@ def game_loop():
     game_over = False
     game_close = False
 
-    foodx = round(random.randomrange(0, dis_width - s))
+    foodx = round(random.randrange(0, dis_width - s))
+    foody = round(random.randrange(0, dis_width - s))
     
 
     
 while not game_over:
+
+    while game_close == True:
+
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             game_over = True
@@ -73,7 +77,7 @@ while not game_over:
                 
     if x1 >= dis_width or x1 < 0 or y1 >= dis_height or y1 < 0:
         game_over = True
-                
+
     x1 += x1_change
     y1 += y1_change
     dis.fill(white)
