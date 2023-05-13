@@ -52,16 +52,16 @@ def game_loop():
     foodx = round(random.randrange(0, - snake_block) / 10.0) * 10.0
     foody = round(random.randrange(0, - snake_block) / 10.0) * 10.0
     
+    while not game_over:
 
-    
-while not game_over:
-
-    while game_close == True:
-        dis.fill(white)
-        message("You Lost! Press Q-Quit or C-Play Again", red)
-        pygame.display.update()
+        while game_close == True:
+            dis.fill(white)
+            message("You Lost! Press Q-Quit or C-Play Again", red)
+            pygame.display.update()
         
-        for event in pygame.event.get():
+            for event in pygame.event.get():
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_q:
 
 
     for event in pygame.event.get():
