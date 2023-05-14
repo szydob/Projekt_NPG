@@ -99,7 +99,7 @@ def game_loop():
     pygame.display.update()
 
     if x1 == foodx and y1 == foody:
-    
+        print("Yummy!!")
     clock.tick(snake_speed)
     
 message("You lost", red)
@@ -108,3 +108,5 @@ time.sleep(2)
 
 pygame.quit()
 quit()
+
+game_loop()
