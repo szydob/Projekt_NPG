@@ -25,3 +25,7 @@ black = (0, 0, 0)
 red = (213, 50, 80)
 green = (0, 255, 0)
 blue = (50, 153, 213)
+
+#varaibles responsible for snake speed and thickness
+snake_block = 10
+snake_speed = 15
