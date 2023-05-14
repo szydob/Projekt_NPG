@@ -31,7 +31,7 @@ y1_change = 0
 clock = pygame.time.Clock()
 snake_speed = 30
 
-font_style = pygame.font.SysFont(None, 50)
+font_style = pygame.font.SysFont(None, 30)
 
 #menu section
 mainmenu = pygame_menu.Menu('Wonsz z Duszą', dis_width, dis_height, theme=themes.THEME_SOLARIZED)
