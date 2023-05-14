@@ -42,7 +42,7 @@ def message(msg, color):
     mesg_rect = mesg.get_rect(center=(dis_width/2, dis_height/2))
     dis.blit(mesg, mesg_rect)   
    
-def game_loop():
+def gameLoop():
     game_over = False
     game_close = False
     
