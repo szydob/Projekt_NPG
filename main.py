@@ -19,9 +19,6 @@ pygame.display.set_caption('Wonsz z Dusza')
 
 game_over = False
 
-x1 = dis_width/2
-y1 = dis_height/2
-
 snake_block = 10
 snake_speed = 30
 
@@ -48,6 +45,9 @@ def message(msg, color):
 def game_loop():
     game_over = False
     game_close = False
+    
+    x1 = dis_width/2
+    y1 = dis_height/2
 
     foodx = round(random.randrange(0, - snake_block) / 10.0) * 10.0
     foody = round(random.randrange(0, - snake_block) / 10.0) * 10.0
