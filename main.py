@@ -91,11 +91,14 @@ def game_loop():
     x1 += x1_change
     y1 += y1_change
     dis.fill(white)
+    pygame.draw.rect(dis, blue, [foodx, foody, snake_block, snake_block])
     pygame.draw.rect(dis, black, [x1, y1, snake_block, snake_block])
 
     pygame.draw.rect(dis, black, [x1, y1, 10, 10])
 
     pygame.display.update()
+
+    if x1 == foodx and y1 == foody:
     
     clock.tick(snake_speed)
     
