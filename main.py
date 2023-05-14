@@ -109,4 +109,4 @@ time.sleep(2)
 pygame.quit()
 quit()
 
-game_loop()
+gameLoop()
