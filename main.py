@@ -1,8 +1,8 @@
-import pygame
-import pygame_menu
 from pygame_menu import themes
-import time
-import random
+import pygame_menu
+from variables import *
+from singleplayer import single_player
+from survival import survival
 
 pygame.init()
 
