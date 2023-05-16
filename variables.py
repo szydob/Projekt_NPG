@@ -16,7 +16,7 @@ clock = pygame.time.Clock()
 
 #font and styels variables
 font_style = pygame.font.SysFont("bahnschrift", 25)
-score_font = pygame.font.SysFont("comicsansms", 35)
+score_font = pygame.font.SysFont("comicsansms", 25)
 
 #color variables
 white = (255, 255, 255)
@@ -32,4 +32,4 @@ snake_speed = 15
 
 #auxiliary functions
 def Your_score(score, type):
-    pass
+     value = score_font.render("Score p1: " + str(score), True, yellow)
