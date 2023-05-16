@@ -9,8 +9,8 @@ dis_width = 800
 dis_height = 600
 dis = pygame.display.set_mode((dis_width, dis_height))
 pygame.display.set_caption("Wonsz z Duszą")
-icon = pygame.image.load("assets/hero.png")
-pygame.display.set_icon(icon)
+# icon = pygame.image.load("assets/hero.png")
+# pygame.display.set_icon(icon)
 
 clock = pygame.time.Clock()
 
@@ -29,3 +29,7 @@ blue = (50, 153, 213)
 #varaibles responsible for snake speed and thickness
 snake_block = 10
 snake_speed = 15
+
+#auxiliary functions
+def Your_score(score, type):
+    pass
