@@ -12,3 +12,12 @@ def single_player():
 
     snake_List = []
     Length_of_snake = 1
+
+    foodx = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
+    foody = round(random.randrange(0, dis_height - snake_block) / 10.0) * 10.0
+
+    while not game_over:
+
+        while game_close == True:
+            dis.fill(blue)
+            message("You Lost! Press C-Play Again or Q-Quit", red)
