@@ -4,21 +4,14 @@ from variables import *
 from singleplayer import single_player
 from survival import survival
 
-pygame.init()
+mainmenu = pygame_menu.Menu('Wonsz z Duszą', dis_width, dis_height, theme=themes.THEME_SOLARIZED)
 
-white = (255, 255, 255)
-black = (0, 0, 0)
-red = (255, 0, 0)
-blue = (0, 0, 255)
+def set_difficulty(value, difficulty):
+    print(value)
+    print(difficulty)
 
-dis_width = 800
-dis_height = 600
-
-dis = pygame.display.set_mode((dis_width, dis_height))
-pygame.display.set_caption('Wonsz z Dusza')
-
-snake_block = 10
-snake_speed = 30
+    
+    
 
 clock = pygame.time.Clock()
 
