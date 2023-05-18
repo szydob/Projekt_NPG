@@ -10,19 +10,13 @@ def set_difficulty(value, difficulty):
     print(value)
     print(difficulty)
 
-    
-    
+def level_menu(level):
+    mainmenu._open(level)
 
-clock = pygame.time.Clock()
+def main_menu():
+    mainmenu.add.button('Single player', single_player)  
 
-font_style = pygame.font.SysFont(None, 30)
 
-#menu section
-mainmenu = pygame_menu.Menu('Wonsz z Duszą', dis_width, dis_height, theme=themes.THEME_SOLARIZED)
-mainmenu.add.button('Single player')
-mainmenu.add.button('Survival')
-mainmenu.add.button('Levels')
-mainmenu.add.button('Quit', pygame_menu.events.EXIT)
 
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
