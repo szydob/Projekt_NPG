@@ -1,50 +1,31 @@
-import pygame
-import pygame_menu
 from pygame_menu import themes
-import time
-import random
+import pygame_menu
+from variables import *
+from singleplayer import single_player
+from survival import survival
 
-pygame.init()
-
-white = (255, 255, 255)
-black = (0, 0, 0)
-red = (255, 0, 0)
-blue = (0, 0, 255)
-
-dis_width = 800
-dis_height = 600
-
-dis = pygame.display.set_mode((dis_width, dis_height))
-pygame.display.set_caption('Wonsz z Dusza')
-
-snake_block = 10
-snake_speed = 30
-
-clock = pygame.time.Clock()
-
-font_style = pygame.font.SysFont(None, 30)
-
-#menu section
 mainmenu = pygame_menu.Menu('Wonsz z Duszą', dis_width, dis_height, theme=themes.THEME_SOLARIZED)
-mainmenu.add.button('Single player')
-mainmenu.add.button('Survival')
-mainmenu.add.button('Levels')
-mainmenu.add.button('Quit', pygame_menu.events.EXIT)
 
-def message(msg, color):
-    mesg = font_style.render(msg, True, color)
-    mesg_rect = mesg.get_rect(center=(dis_width/2, dis_height/2))
-    dis.blit(mesg, mesg_rect)   
+def set_difficulty(value, difficulty):
+    print(value)
+    print(difficulty)
+
+def level_menu(level):
+    mainmenu._open(level)
+
+def main_menu():
+    mainmenu.add.button('Single player', single_player)  
+    mainmenu.add.button('Survival', survival)
+    mainmenu.add.button('Levels', level_menu)
+    mainmenu.add.button('Quit', pygame_menu.events.EXIT)
+
+    level = pygame_menu.Menu('Select a Difficulty', dis_width, dis_height, theme=themes.THEME_BLUE)
+
+
+
+
+
    
-def gameLoop():
-    game_over = False
-    game_close = False
-    
-    x1 = dis_width/2
-    y1 = dis_height/2
-
-    x1_change = 0
-    y1_change = 0
 
     foodx = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
     foody = round(random.randrange(0, dis_height - snake_block) / 10.0) * 10.0
