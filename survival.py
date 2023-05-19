@@ -58,3 +58,16 @@ def survival():
                     y1_change = snake_block
                     x1_change = 0
 
+                 #player2   
+                if event.key == pygame.K_a:
+                    x2_change = -snake_block
+                    y2_change = 0
+                elif event.key == pygame.K_d:
+                    x2_change = snake_block
+                    y2_change = 0
+                elif event.key == pygame.K_w:
+                    x2_change = 0
+                    y2_change = -snake_block
+                elif event.key == pygame.K_s:
+                    y2_change = snake_block
+                    x2_change = 0
