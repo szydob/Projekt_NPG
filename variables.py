@@ -34,5 +34,7 @@ snake_speed = 15
 def Your_score(score, type):
      value = score_font.render("Score p1: " + str(score), True, yellow)
      if type == 1:
-          dis.blit(value, [0,0])
+          dis.blit(value, [0, 0])
+     else:
+          dis.blit(value, [600, 0])
           
