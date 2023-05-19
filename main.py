@@ -15,23 +15,17 @@ def level_menu(level):
 
 def main_menu():
     mainmenu.add.button('Single player', single_player)  
+    mainmenu.add.button('Survival', survival)
+    mainmenu.add.button('Levels', level_menu)
+    mainmenu.add.button('Quit', pygame_menu.events.EXIT)
+
+    level = pygame_menu.Menu('Select a Difficulty', dis_width, dis_height, theme=themes.THEME_BLUE)
 
 
 
-def message(msg, color):
-    mesg = font_style.render(msg, True, color)
-    mesg_rect = mesg.get_rect(center=(dis_width/2, dis_height/2))
-    dis.blit(mesg, mesg_rect)   
+
+
    
-def gameLoop():
-    game_over = False
-    game_close = False
-    
-    x1 = dis_width/2
-    y1 = dis_height/2
-
-    x1_change = 0
-    y1_change = 0
 
     foodx = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
     foody = round(random.randrange(0, dis_height - snake_block) / 10.0) * 10.0
