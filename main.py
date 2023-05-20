@@ -20,6 +20,11 @@ def main_menu():
     mainmenu.add.button('Quit', pygame_menu.events.EXIT)
 
     level = pygame_menu.Menu('Select a Difficulty', dis_width, dis_height, theme=themes.THEME_BLUE)
+    level.add.selector('Difficulty :', [('Hard', 1), ('Normal', 2), ('Easy', 3)], onchange=set_difficulty)
+
+    arrow = pygame_menu.widgets.LeftArrowSelection(arrow_size=(10, 15))
+
+    play = pygame.USEREVENT + 0
 
 
 
@@ -27,15 +32,7 @@ def main_menu():
 
    
 
-    foodx = round(random.randrange(0, dis_width - snake_block) / 10.0) * 10.0
-    foody = round(random.randrange(0, dis_height - snake_block) / 10.0) * 10.0
-    
-    while not game_over:
-
-        while game_close == True:
-            dis.fill(white)
-            message("You Lost! Press Q-Quit or C-Play Again", red)
-            pygame.display.update()
+   
         
             for event in pygame.event.get():
                 if event.type == pygame.KEYDOWN:
