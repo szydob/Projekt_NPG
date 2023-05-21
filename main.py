@@ -25,6 +25,11 @@ def main_menu():
     arrow = pygame_menu.widgets.LeftArrowSelection(arrow_size=(10, 15))
 
     play = pygame.USEREVENT + 0
+    
+    while True:
+        events = pygame.event.get()
+        for event in events:
+            if event.type == play:
 
 
 
