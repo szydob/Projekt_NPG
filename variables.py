@@ -37,4 +37,7 @@ def Your_score(score, type):
           dis.blit(value, [0, 0])
      else:
           dis.blit(value, [600, 0])
-          
+
+
+def our_snake(snake_block, snake_list, color):
+     
