@@ -40,4 +40,5 @@ def Your_score(score, type):
 
 
 def our_snake(snake_block, snake_list, color):
-     
+     for x in snake_list:
+          pygame.draw.rect(dis, color, [x[0], x[1], snake_block, snake_block])
