@@ -48,3 +48,16 @@ def single_player():
                 elif event.key == pygame.K_DOWN:
                     y1_change = snake_block
                     x1_change = 0
+
+        if x1 >= dis_width or x1 < 0 or y1 >= dis_height or y1 < 0:
+            game_close = True
+        x1 += x1_change
+        y1 += y1_change
+        dis.blit(bg, (0, 0))
+        pygame.draw.rect(dis, green, [foodx, foody, snake_block, snake_block])
+        snake_Head = []
+        snake_Head.append(x1)
+        snake_Head.append(y1)
+        snake_List.append(snake_Head)
+        if len(snake_List) > Length_of_snake:
+            del snake_List[0]
