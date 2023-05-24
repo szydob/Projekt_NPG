@@ -37,4 +37,13 @@ def Your_score(score, type):
           dis.blit(value, [0, 0])
      else:
           dis.blit(value, [600, 0])
-          
+
+
+def our_snake(snake_block, snake_list, color):
+     for x in snake_list:
+          pygame.draw.rect(dis, color, [x[0], x[1], snake_block, snake_block])
+
+def message(msg, color):
+    mesg = font_style.render(msg, True, color)
+    mesg_rect = mesg.get_rect(center=(dis_width / 2, dis_height / 2))
+    dis.blit(mesg, mesg_rect)
