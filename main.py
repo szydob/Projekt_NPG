@@ -37,6 +37,10 @@ def main_menu():
 
             if event.type == pygame.QUIT:
                 exit()
+                
+        if mainmenu.is_enabled():
+           mainmenu.update(events)
+           mainmenu.draw(dis)
 
 
 
@@ -47,18 +51,7 @@ def main_menu():
    
         
             
-                if event.key == pygame.K_LEFT:
-                    x1_change = -snake_block
-                    y1_change = 0
-                elif event.key == pygame.K_RIGHT:
-                    x1_change = snake_block
-                    y1_change = 0
-                elif event.key == pygame.K_UP:
-                    x1_change = 0
-                    y1_change = -snake_block
-                elif event.key == pygame.K_DOWN:
-                    y1_change = snake_block
-                    x1_change = 0
+               
                 
         if x1 >= dis_width or x1 < 0 or y1 >= dis_height or y1 < 0:
             game_over = True
