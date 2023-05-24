@@ -45,3 +45,5 @@ def our_snake(snake_block, snake_list, color):
 
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
+    mesg_rect = mesg.get_rect(center=(dis_width / 2, dis_height / 2))
+    dis.blit(mesg, mesg_rect)
